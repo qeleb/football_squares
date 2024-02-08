@@ -1,0 +1,122 @@
+.Home {
+  overflow: hidden auto;
+  height: 100%;
+  background: linear-gradient(#0a0903 0 50%, #0e273c 50% 100%);
+  color: #c9dcb3;
+  text-align: center;
+  scroll-behavior: smooth; /* stylelint-disable-line plugin/no-unsupported-browser-features */
+
+  & > .scores {
+    background: #0a0903;
+
+    & > .scoreSheet {
+      display: flex;
+      flex-flow: column;
+      gap: 0.2rem;
+      width: min(96%, 50rem);
+      margin: 1.5rem auto 2rem;
+
+      & > h1 {
+        margin: 2rem 0 0;
+      }
+
+      & > h3 {
+        margin: 1.5rem 0;
+      }
+
+      & > .score {
+        display: flex;
+        gap: 0.3rem;
+        justify-content: space-evenly;
+        align-items: center;
+
+        & > input[type='number'] {
+          max-width: 7rem;
+          border: 0;
+          border-radius: 16px;
+          background: #0e273c;
+          color: #c9dcb3;
+          line-height: 1.8rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  & > .expected {
+    background: #0a0903;
+
+    & > h3 {
+      margin: 0 0 1rem;
+    }
+
+    & > .filter {
+      padding: 0.4rem;
+      border: 0;
+      border-radius: 10px;
+      background: #0e273c;
+      color: #c9dcb3;
+    }
+
+    & > .values {
+      display: flex;
+      flex-flow: column;
+      gap: 1rem;
+      padding: 1.5rem 0;
+
+      & > .person {
+        display: flex;
+        flex-flow: column;
+        width: min(30rem, 80%);
+        margin: auto;
+        padding: 0.6rem;
+        border-top: 1px solid #0c071a;
+        border-radius: 16px;
+        background: #0e273c;
+        color: #c9dcb3;
+
+        & > .name {
+          display: flex;
+          gap: 1rem;
+          justify-content: center;
+          align-items: center;
+          margin: 0 0 0.5rem;
+          font-weight: 800;
+          text-transform: uppercase;
+
+          & > svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: #c9dcb3;
+          }
+
+          & > div {
+            text-wrap: nowrap;
+          }
+        }
+
+        & > .chart {
+          position: relative;
+          right: 45%;
+        }
+
+        & > .chance {
+          display: flex;
+          gap: 0.5rem;
+          justify-content: space-evenly;
+          font-weight: 600;
+          font-size: 0.8rem;
+
+          & > i {
+            font-weight: 400;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+
+  & > .about {
+    margin: 3rem 0;
+  }
+}

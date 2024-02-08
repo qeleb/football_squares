@@ -1,0 +1,22 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  &:focus {
+    outline: 1px solid #c9dcb3;
+  }
+
+  &::placeholder {
+    color: #c9dcb3;
+    opacity: 0.8;
+  }
+}
