@@ -1,7 +1,7 @@
 import styles from '@/components/Footer/Footer.module.scss';
 
 export const Footer = () => (
-  <div class={styles.Footer} id="about">
+  <div class={styles.Footer}>
     <span>
       <i>Designed by qeleb</i>
       <a href="https://github.com/qeleb" aria-label="Developer GitHub">

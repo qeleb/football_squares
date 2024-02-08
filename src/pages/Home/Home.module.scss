@@ -33,7 +33,6 @@
 
         & > input[type='number'] {
           max-width: 7rem;
-          border: 0;
           border-radius: 16px;
           background: #0e273c;
           color: #c9dcb3;
@@ -44,7 +43,44 @@
     }
   }
 
+  & > .visual {
+    display: flex;
+    flex-flow: column;
+    padding: 1rem 0;
+    background: #0b1a27;
+
+    & > .graphExpected {
+      display: flex;
+      flex-flow: column;
+      width: 96%;
+      margin: auto;
+
+      & > canvas {
+        min-width: clamp(35%, 25rem, 100%);
+        max-height: max(18rem, 35vh);
+        margin: auto;
+      }
+
+      & > .graphButtons {
+        display: flex;
+        gap: 0.5rem;
+        width: min(20rem, 100%);
+        margin: auto;
+        padding: 1rem 0;
+
+        button {
+          width: 20%;
+          height: 2rem;
+          border-radius: 10px;
+          background: #e08dac;
+          color: #0a0903;
+        }
+      }
+    }
+  }
+
   & > .expected {
+    padding: 1rem 0;
     background: #0a0903;
 
     & > h3 {
@@ -53,7 +89,6 @@
 
     & > .filter {
       padding: 0.4rem;
-      border: 0;
       border-radius: 10px;
       background: #0e273c;
       color: #c9dcb3;

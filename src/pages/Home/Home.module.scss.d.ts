@@ -3,6 +3,9 @@ declare const classNames: {
   readonly scores: 'scores';
   readonly scoreSheet: 'scoreSheet';
   readonly score: 'score';
+  readonly visual: 'visual';
+  readonly graphExpected: 'graphExpected';
+  readonly graphButtons: 'graphButtons';
   readonly expected: 'expected';
   readonly filter: 'filter';
   readonly values: 'values';

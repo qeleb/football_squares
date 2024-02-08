@@ -3,7 +3,7 @@ import { Chart, Colors } from 'chart.js/auto';
 import { Pie } from 'solid-chartjs';
 import { onMount } from 'solid-js';
 
-export const WinningsPie = (props: { expected: () => Big }) => {
+export const SingleWinningsPie = (props: { expected: () => Big }) => {
   onMount(() => Chart.register(Colors));
 
   return (
@@ -15,6 +15,7 @@ export const WinningsPie = (props: { expected: () => Big }) => {
             data: [+Big(500).minus(props.expected()), +props.expected()],
             backgroundColor: ['#19679f', '#e54662'],
             borderColor: ['#e9fcd3', '#e9fcd3'],
+            borderWidth: 1,
           },
         ],
       }}
