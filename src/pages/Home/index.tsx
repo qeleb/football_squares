@@ -26,7 +26,7 @@ export const Home = () => {
   const [q3Nine, setQ3Nine] = createSignal<number | undefined>(undefined);
   const [q4Nine, setQ4Nine] = createSignal<number | undefined>(undefined);
 
-  const [filter, setFilter] = createSignal('');
+  const [filter, setFilter] = createSignal(new URLSearchParams(location.search).get('name') || '');
 
   const q1Edited = createMemo(() => q1Chiefs() != null && q1Nine() != null);
   const q2Edited = createMemo(() => q2Chiefs() != null && q2Nine() != null);
@@ -67,6 +67,7 @@ export const Home = () => {
           class={styles.filter}
           type="text"
           placeholder="filter"
+          value={filter()}
           onInput={e => setFilter(e.target.value.toLowerCase())}
         />
         <div class={styles.values}>
