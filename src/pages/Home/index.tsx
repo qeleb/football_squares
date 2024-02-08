@@ -164,7 +164,7 @@ export const Home = () => {
                             .minus(Big(1).minus(chanceCorrectQ1()))
                             .mul(Big(1).minus(chanceCorrectQ2()))
                             .mul(Big(1).minus(chanceCorrectQ3()))
-                            .mul(Big(1).minus(chanceCorrectQ4()))
+                            .mul(Big(1).minus(chanceCorrectQ4()).mul(100))
                             .toPrecision(3)}%`}
                     </i>
                   </span>
@@ -177,7 +177,7 @@ export const Home = () => {
                             .minus(Big(1).minus(chanceReverseQ1()))
                             .mul(Big(1).minus(chanceReverseQ2()))
                             .mul(Big(1).minus(chanceReverseQ3()))
-                            .mul(Big(1).minus(chanceReverseQ4()))
+                            .mul(Big(1).minus(chanceReverseQ4()).mul(100))
                             .toPrecision(3)}%`}
                     </i>
                   </span>
