@@ -37,6 +37,7 @@
     "test:ui": "vitest --coverage --ui",
     "lint": "eslint src && stylelint src/**/*.scss",
     "lint:fix": "eslint --fix src && stylelint --fix src/**/*.scss",
+    "deploy": "gh-pages -d dist",
     "preinstall": "npx only-allow yarn",
     "postinstall": "husky"
   },
@@ -57,6 +58,7 @@
     "eslint-plugin-solid": "^0.13.1",
     "eslint-plugin-testing-library": "^6.2.0",
     "eslint-plugin-vitest": "^0.3.21",
+    "gh-pages": "^6.1.1",
     "husky": "^9.0.10",
     "jsdom": "^24.0.0",
     "lightningcss": "^1.23.0",
